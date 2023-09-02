@@ -40,7 +40,7 @@ const PageManageBooking = () => {
   // get online days
   const getOnlineDays = async (current) => {
     const response = await fetch(
-      `http://localhost:4000/listings/${listingId}`,
+      `https://airbnb-backend-yst990102.cloud.okteto.net/listings/${listingId}`,
       {
         method: 'GET',
         headers: {
@@ -159,7 +159,7 @@ const PageManageBooking = () => {
     setToken(userToken);
 
     // get all bookings
-    const response = await fetch('http://localhost:4000/bookings', {
+    const response = await fetch('https://airbnb-backend-yst990102.cloud.okteto.net/bookings', {
       method: 'GET',
       headers: {
         'Content-type': 'application/json',

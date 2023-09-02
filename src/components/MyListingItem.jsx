@@ -60,7 +60,7 @@ function MyListingItem ({
   // delete current listing
   const deleteListing = async () => {
     const response = await fetch(
-      `http://localhost:4000/listings/${listingInfo.id}`,
+      `https://airbnb-backend-yst990102.cloud.okteto.net/listings/${listingInfo.id}`,
       {
         method: 'DELETE',
         headers: {
@@ -82,7 +82,7 @@ function MyListingItem ({
   // unpublish this listing
   const unPublish = async () => {
     const response = await fetch(
-      `http://localhost:4000/listings/unpublish/${listingInfo.id}`,
+      `https://airbnb-backend-yst990102.cloud.okteto.net/listings/unpublish/${listingInfo.id}`,
       {
         method: 'PUT',
         headers: {

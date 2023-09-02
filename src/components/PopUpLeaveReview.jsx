@@ -57,7 +57,7 @@ function PopUpLeaveReview ({
   const sendReview = async () => {
     if (check()) {
       const response = await fetch(
-        `http://localhost:4000/listings/${listingId}/review/${bookingId}`,
+        `https://airbnb-backend-yst990102.cloud.okteto.net/listings/${listingId}/review/${bookingId}`,
         {
           method: 'PUT',
           headers: {

@@ -44,7 +44,7 @@ function HeaderNav ({
 
   // send logout request
   const logout = async () => {
-    const response = await fetch('http://localhost:4000/user/auth/logout', {
+    const response = await fetch('https://airbnb-backend-yst990102.cloud.okteto.net/user/auth/logout', {
       method: 'POST',
       headers: {
         'Content-type': 'application/json',

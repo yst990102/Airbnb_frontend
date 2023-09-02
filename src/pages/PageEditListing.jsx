@@ -51,7 +51,7 @@ const PageEditListing = () => {
 
   // send update listing request
   const update = async () => {
-    const response = await fetch(`http://localhost:4000/listings/${id}`, {
+    const response = await fetch(`https://airbnb-backend-yst990102.cloud.okteto.net/listings/${id}`, {
       method: 'PUT',
       headers: {
         'Content-type': 'application/json',
