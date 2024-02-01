@@ -61,7 +61,7 @@ function PopUpDate ({
   // send publish request
   const publish = async () => {
     const response = await fetch(
-      `https://airbnb-backend-yst990102.cloud.okteto.net/listings/publish/${listingInfo.id}`,
+      `https://airbnb-backend.up.railway.app/listings/publish/${listingInfo.id}`,
       {
         method: 'PUT',
         headers: {

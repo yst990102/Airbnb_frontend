@@ -59,7 +59,7 @@ function PopUpBooking ({ id, price, setBook, setPopUpMessage, setMessage }) {
     // get number of days of booking
     const day =
       (Date.parse(date.end) - Date.parse(date.start)) / (1000 * 60 * 60 * 24);
-    const response = await fetch(`https://airbnb-backend-yst990102.cloud.okteto.net/bookings/new/${id}`, {
+    const response = await fetch(`https://airbnb-backend.up.railway.app/bookings/new/${id}`, {
       method: 'POST',
       headers: {
         'Content-type': 'application/json',

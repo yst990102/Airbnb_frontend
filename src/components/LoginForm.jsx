@@ -23,7 +23,7 @@ function LoginForm () {
 
     if (finalPass === true) {
       // send request
-      const response = await fetch('https://airbnb-backend-yst990102.cloud.okteto.net/user/auth/login', {
+      const response = await fetch('https://airbnb-backend.up.railway.app/user/auth/login', {
         method: 'POST',
         headers: { 'Content-type': 'application/json' },
         body: JSON.stringify({ email, password })

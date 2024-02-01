@@ -34,7 +34,7 @@ const PageHome = () => {
 
   // get listing detail
   const sendGetDetailListing = (id) => {
-    return fetch(`https://airbnb-backend-yst990102.cloud.okteto.net/listings/${id}`, {
+    return fetch(`https://airbnb-backend.up.railway.app/listings/${id}`, {
       method: 'GET',
       headers: {
         'Content-type': 'application/json'
@@ -44,7 +44,7 @@ const PageHome = () => {
 
   // get all listings
   const getAllListing = async (email) => {
-    const response = await fetch('https://airbnb-backend-yst990102.cloud.okteto.net/listings', {
+    const response = await fetch('https://airbnb-backend.up.railway.app/listings', {
       method: 'GET',
       headers: {
         'Content-type': 'application/json',
@@ -59,7 +59,7 @@ const PageHome = () => {
       // if user login, get all the booking id
       if (token) {
         const allBookingsResponse = await fetch(
-          'https://airbnb-backend-yst990102.cloud.okteto.net/bookings',
+          'https://airbnb-backend.up.railway.app/bookings',
           {
             method: 'GET',
             headers: {

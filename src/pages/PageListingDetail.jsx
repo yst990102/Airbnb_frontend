@@ -45,7 +45,7 @@ const PageListingDetail = () => {
 
   // get information of listing
   const loadInfo = async () => {
-    const response = await fetch(`https://airbnb-backend-yst990102.cloud.okteto.net/listings/${id}`, {
+    const response = await fetch(`https://airbnb-backend.up.railway.app/listings/${id}`, {
       method: 'GET',
       headers: { 'Content-type': 'application/json' }
     });

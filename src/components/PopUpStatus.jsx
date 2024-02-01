@@ -35,7 +35,7 @@ function PopUpStatus ({ id, setStatus, setBookingId, setPopUpLeaveReview }) {
 
     const myBooking = [];
 
-    const response = await fetch('https://airbnb-backend-yst990102.cloud.okteto.net/bookings', {
+    const response = await fetch('https://airbnb-backend.up.railway.app/bookings', {
       method: 'GET',
       headers: {
         'Content-type': 'application/json',

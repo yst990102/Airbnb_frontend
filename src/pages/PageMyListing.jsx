@@ -36,7 +36,7 @@ const PageMyListing = () => {
 
   // get all user's listing
   const getOwnListing = async (email) => {
-    const response = await fetch('https://airbnb-backend-yst990102.cloud.okteto.net/listings', {
+    const response = await fetch('https://airbnb-backend.up.railway.app/listings', {
       method: 'GET',
       headers: {
         'Content-type': 'application/json',
@@ -53,7 +53,7 @@ const PageMyListing = () => {
         if (listing.owner === email) {
           listingIds.push(listing.id);
           userListings.push(
-            fetch(`https://airbnb-backend-yst990102.cloud.okteto.net/listings/${listing.id}`, {
+            fetch(`https://airbnb-backend.up.railway.app/listings/${listing.id}`, {
               method: 'GET',
               headers: {
                 'Content-type': 'application/json'
