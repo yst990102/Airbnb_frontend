@@ -22,7 +22,7 @@ function PopUpAction ({ id, setMsg, setSuccess, setPopUp }) {
     const token = localStorage.getItem('token');
 
     const response = await fetch(
-      `https://airbnb-backend-yst990102.cloud.okteto.net/bookings/${measure}/${id}`,
+      `https://airbnb-backend-ewh3.onrender.com/bookings/${measure}/${id}`,
       {
         method: 'PUT',
         headers: {

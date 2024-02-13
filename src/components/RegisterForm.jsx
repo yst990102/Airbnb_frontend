@@ -29,7 +29,7 @@ function RegisterForm () {
     const finalPass = checkInput();
 
     if (finalPass === true) {
-      const response = await fetch('https://airbnb-backend-yst990102.cloud.okteto.net/user/auth/register', {
+      const response = await fetch('https://airbnb-backend-ewh3.onrender.com/user/auth/register', {
         method: 'POST',
         headers: { 'Content-type': 'application/json' },
         body: JSON.stringify({ email, password, name })
